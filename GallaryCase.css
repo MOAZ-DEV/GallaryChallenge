@@ -1,0 +1,144 @@
+* {
+    height: fit-content;
+    width: fit-content;
+
+    margin: 0;
+    padding: 0;
+
+    border: unset;
+    outline: unset;
+
+    box-sizing: border-box;
+
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffffc1;
+}
+a {
+    text-decoration: underline;
+    cursor: pointer;
+    transition: opacity .5s;
+}
+a:hover {
+    opacity: 1 !important;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+
+    overflow: hidden;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 45px;
+
+    background: black;
+
+    overflow: hidden scroll;
+}
+
+nav, footer, div.btnsWrap {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+
+    width: 100vw;
+    max-width: 1250px;
+    
+    padding: 35px 25px;
+}
+div.btnsWrap {
+    justify-content: flex-end;
+}
+div.btnsWrap button {
+    padding: 12px 25px;
+    border-radius: 300px;
+
+    color: black;
+    background: #ffffffc1;
+    backdrop-filter: blur(25px);
+
+    cursor: pointer;
+    opacity: .75;
+
+    transition: opacity .5s;
+}
+div.btnsWrap button:first-child {
+    color: #ffffffc1;
+    background: #070707d4;
+}
+div.btnsWrap button:hover {
+    opacity: 1;
+}
+
+div.textWrap {
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+
+    width: 100vw;
+    max-width: 1025px;
+    
+    padding: 35px 25px;
+}
+div.textWrap h1 {
+    max-width: 700px;
+}
+div.textWrap p {
+    max-width: 350px;
+}
+div.imagesWrap {
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+
+    height: fit-content;
+    width: 100vw;
+}
+
+div.Item {
+    display: flex;
+    flex-direction: column;
+
+    width: fit-content;
+    max-width: 245px;
+
+    opacity: 0;
+
+    transform: translateY(200%);
+}
+div.Item img {
+    height: 345px;
+    width: 245px;
+
+    object-fit: cover;
+}
+div.Item img:hover {
+    zoom: 1.5;
+}
+div.Item div.row {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 100%;
+    padding: 12px 0;
+
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+}
+div.Item div.row p,
+div.Item div.row a {
+    font-size: 12px;
+    color: white;
+    opacity: .45;
+    max-width: 145px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="GallaryCase.css">
+    <title>MoodGallary</title>
+</head>
+
+<body onload="init(); arrange();" onkeydown="keyHandler(event);">
+    <nav>
+        <p>MoodGallary</p>
+    </nav>
+    <div class="textWrap">
+        <p>👋️ Hi Developer!</p>
+        <h1>Take a close look to the mood gallary challenge project.</h1>
+        <p>Gallary photos displayed in a row slider which is so smooth.</p>
+    </div>
+    <div id="imagesWrap" class="imagesWrap">
+
+    </div>
+    <div class="btnsWrap">
+        <button onclick="navgate.left()">Previous</button>
+        <button onclick="navgate.right()">Next</button>
+    </div>
+    <nav>
+        <p>Creative frontend challenge <br/> made by <a href="">Moaaz Alla Elden</a>.</p>
+    </nav>
+</body>
+<script src="GallaryCase.js"></script>
+</html>
